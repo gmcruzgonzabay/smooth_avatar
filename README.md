@@ -8,7 +8,7 @@ SmoothAvatar provides animated image loading, error handling and optional border
 
 ## 📸 Preview
 
-<img src="https://raw.githubusercontent.com/gmcruzgonzabay/smooth_avatar/main/screenshots/demo.png" width="400" />
+<img src="https://raw.githubusercontent.com/gmcruzgonzabay/smooth_avatar/main/screenshots/demo.png" width="150" />
 
 ---
 
