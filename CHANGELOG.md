@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.3
+
+- Fixed screenshot rendering using GitHub raw URL.
+- Adjusted preview image size in README.
+- Documentation improvements.
+
 ## 1.0.2
 
 - Fixed README screenshot URL to use correct GitHub repository.
