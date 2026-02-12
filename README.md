@@ -8,7 +8,7 @@ SmoothAvatar provides animated image loading, error handling and optional border
 
 ## 📸 Preview
 
-![SmoothAvatar Demo](screenshots/demo.png)
+![SmoothAvatar Demo](https://raw.githubusercontent.com/gmcruzgonzabay/smooth_avatar/main/screenshots/demo.png)
 
 ---
 
@@ -28,7 +28,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  smooth_avatar: ^0.0.1
+  smooth_avatar: ^1.0.2
 ```
 
 Then run:
@@ -58,7 +58,7 @@ SmoothAvatar(
 
 ## 🛠 Example
 
-A complete runnable example is available in the [`example/`](https://github.com/gregoriocruzg/smooth_avatar/tree/main/example) folder of this repository, demonstrating loading states, error handling, and asset usage.
+A complete runnable example is available in the [`example/`](https://github.com/gmcruzgonzabay/smooth_avatar/tree/main/example) folder of this repository, demonstrating loading states, error handling, and asset usage.
 
 ---
 
