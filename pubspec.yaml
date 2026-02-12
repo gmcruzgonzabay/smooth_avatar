@@ -1,6 +1,6 @@
 name: smooth_avatar
 description: A customizable fade-in circular avatar widget with animated loading, error handling and optional border.
-version: 0.0.2
+version: 0.1.0
 homepage: https://github.com/gregoriocruzg/smooth_avatar
 repository: https://github.com/gregoriocruzg/smooth_avatar
 issue_tracker: https://github.com/gregoriocruzg/smooth_avatar/issues

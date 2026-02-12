@@ -1,5 +1,3 @@
-library smooth_avatar;
-
 import 'package:flutter/material.dart';
 
 /// A customizable fade-in circular avatar widget for Flutter.
@@ -23,16 +21,17 @@ class SmoothAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final safeBorderWidth = borderWidth.clamp(0, radius).toDouble();
     return Container(
       width: radius * 2,
       height: radius * 2,
-      padding: EdgeInsets.all(borderWidth),
+      padding: EdgeInsets.all(safeBorderWidth),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        border: borderWidth > 0
+        border: safeBorderWidth > 0
             ? Border.all(
                 color: borderColor ?? Colors.transparent,
-                width: borderWidth,
+                width: safeBorderWidth,
               )
             : null,
       ),
@@ -42,8 +41,27 @@ class SmoothAvatar extends StatelessWidget {
           fit: BoxFit.cover,
           frameBuilder: (context, child, frame, wasSynchronouslyLoaded) {
             if (wasSynchronouslyLoaded) return child;
+
+            if (frame == null) {
+              return placeholder ??
+                  Container(
+                    color: Colors.grey.shade200,
+                    alignment: Alignment.center,
+                    child: SizedBox(
+                      width: radius * 0.4,
+                      height: radius * 0.4,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                          Theme.of(context).primaryColor,
+                        ),
+                      ),
+                    ),
+                  );
+            }
+
             return AnimatedOpacity(
-              opacity: frame == null ? 0 : 1,
+              opacity: 1,
               duration: const Duration(milliseconds: 300),
               child: child,
             );
