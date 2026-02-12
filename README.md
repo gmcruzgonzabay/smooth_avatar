@@ -1,39 +1,65 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Smooth Avatar
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A customizable fade-in circular avatar widget for Flutter.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+SmoothAvatar provides animated image loading, error handling and optional border styling, making it a flexible and production-ready alternative to `CircleAvatar`.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+---
 
-## Features
+## ✨ Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Animated fade-in when image loads
+- Supports `NetworkImage`, `AssetImage`, `FileImage`, and any `ImageProvider`
+- Optional border color and width
+- Built-in error fallback widget
+- Lightweight and easy to integrate
 
-## Getting started
+---
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## 📦 Installation
 
-## Usage
+Add this to your `pubspec.yaml`:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  smooth_avatar: ^0.0.1
 ```
 
-## Additional information
+Then run:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```bash
+flutter pub get
+```
+
+---
+
+## 🚀 Usage
+
+```dart
+import 'package:smooth_avatar/smooth_avatar.dart';
+
+SmoothAvatar(
+  image: NetworkImage(
+    'https://randomuser.me/api/portraits/women/68.jpg',
+  ),
+  radius: 50,
+  borderColor: Colors.blue,
+  borderWidth: 3,
+)
+```
+
+---
+
+## 🛠 Example
+
+A complete runnable example is available inside the `example/` folder of this repository.
+
+---
+
+## 📄 License
+
+This package is released under the MIT License.
+
+---
+
+Created with ❤️ by Gregorio Cruz
