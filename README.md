@@ -6,6 +6,12 @@ SmoothAvatar provides animated image loading, error handling and optional border
 
 ---
 
+## 📸 Preview
+
+![SmoothAvatar Demo](screenshots/demo.png)
+
+---
+
 ## ✨ Features
 
 - Animated fade-in when image loads
@@ -52,7 +58,7 @@ SmoothAvatar(
 
 ## 🛠 Example
 
-A complete runnable example is available inside the `example/` folder of this repository.
+A complete runnable example is available in the [`example/`](https://github.com/gregoriocruzg/smooth_avatar/tree/main/example) folder of this repository, demonstrating loading states, error handling, and asset usage.
 
 ---
 
