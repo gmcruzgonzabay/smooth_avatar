@@ -1,7 +1,9 @@
 name: smooth_avatar
-description: "A new Flutter package project."
+description: A customizable fade-in circular avatar widget with animated loading, error handling and optional border.
 version: 0.0.1
-homepage:
+homepage: https://github.com/gregoriocruzg/smooth_avatar
+repository: https://github.com/gregoriocruzg/smooth_avatar
+issue_tracker: https://github.com/gregoriocruzg/smooth_avatar/issues
 
 environment:
   sdk: ^3.10.3
