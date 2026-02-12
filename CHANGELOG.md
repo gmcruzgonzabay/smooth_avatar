@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.2
+
+- Fixed README screenshot URL to use correct GitHub repository.
+- Updated repository, homepage and issue tracker metadata in pubspec.
+
 ## 1.0.1
 
 - Added screenshot preview to README.
