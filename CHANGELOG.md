@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.1
+
+- Added screenshot preview to README.
+- Fixed publication issues related to preview image rendering.
+
 ## 0.1.0
 
 - Added animated loading spinner while image loads.
